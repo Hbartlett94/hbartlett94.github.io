@@ -1,36 +1,199 @@
 <!DOCTYPE html>
+
 <html>
-<head>
-  <title>My site</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>My site</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+html {
+  font-family: "helvetica", sans-serif;
+
+}
+body {
+  background-color: #d0e5d5;
+  margin: 0;
+}
+header {
+  background-image: linear-gradient(#ebaca2,  #d0e5d5);
+  font-size: 24px;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  width: 100%;
+  top: 0;
+}
+section {
+background-color: #d0e5d5;
+  padding: 20px 20% 20px 20%;
+}
+.section2 {
+  padding: 20px 10% 20px 10%;
+  width: 100%;
+}
+
+h1 {
+  font-size: xx-large;
+  color: #163513;
+  font-weight: bold;
+  font-family: "goudy old style", serif;
+}
+
+h2 {
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: "goudy old style", serif;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+h3 {
+  font-size: x-large;
+  color: #008040;
+  margin-bottom: 20px;
+  font-family: "goudy old style", serif;
+  font-weight: normal;
+  margin: 0;
+}
+
+footer {
+  background-color: #557a5e;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+}
+
+
+.footer-col {
+  padding: 20px 80px 10px 80px;
+  position: relative;
+  column-count: 3;
+  column-gap: 10%;
+  column-rule: 1px solid black;
+}
+.col {
+  position: relative;
+  column-count: 4;
+  column-gap: 2%;
+  width: 100%;
+}
+.square1 {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: #ffffff;
+}
+.square2 {
+  width: 200px;
+  height: 200px;
+    position: relative;
+  background-color: #ffffff;
+}
+.square3 {
+  width: 200px;
+  height: 200px;
+    position: relative;
+  background-color: #ffffff;
+}
+.square4 {
+  width: 200px;
+  height: 200px;
+    position: relative;
+  background-color: #ffffff;
+}
+
+.title {
+  z-index: 100;
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  top: 30px;
+}
+
+.hcircle {
+  background: #ce6a6b;
+  position: relative;
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 50%;
+  margin-top: -35%;
+}
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 200px;
+  justify-content: space-between;
+}
 </style>
-<body>
-<h1>Hello World</h1>
-<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
-<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+</head>
+      <header>
+        <div class="title">
+          <h1>
+          Web [e]Scape
+          </h1>
+        </div>
+        <div class="hcircle">
+        </div>
+      </header>
 
-<header>
-  <h2>this is a header</h2>
-</header>
+      <section>
+      <!--
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Second Section</a></li>
+            <li><a href="#">Last Section</a></li>
+          </ul>
+        </nav>
+        -->
+        <body>
+        <h2>Clean, versatile, <em>affordable</em> web design.</h2>
+          <h3>[with a dash of creativity]
+          </h3>
+          <p>I specialize in modern, responsive, and mobile-friendly web design. Did you know that the majority of web traffic comes from mobile devices?</p>
+          <p>My websites also strive for ADA accessibility for an inclusive internet experience, as well as Search Engine Opimization (SEO).
+          <p>Add in a hint of graphic design and artistic and we are well on our way toward a great web appearance that suits your needs!</p>
+<p style="margin-top: 70px; margin-bottom: 0;">Creating professional yet eye-catching websites doesn't have to be hard.</p> <h3 style="margin-top: 0;">You do the visioning, let me do the geeky part.
+          <h2>Nice to meet you.</h2>
+          <p>My name is Heather, I am a community planner and by day - web developer by night. Web design has always been a passion of mine and I'm excited to begin this journey.
+            <br />For me, it represents a creative outlit.</p>
+          <p>[Because nothing says "creative" quite like late nights staring at code...]</p>
+          <p>I have many interests in a wide-range of topics. I'm a deep advocate for theater and the arts, and I have a special place in my heart for travel. On a different spectrum, don't get me started on economics, sociology or urban planning. I suppose I wear many hats. Anyway, you're not here to learn about me - but in case you are, please feel free to <a href="">drop me a line!</a></p>
+          <p>I'm a friendly person and I seek to cater my web design approach to your needs. Come down to my "office" (pictured below) or shoot me an email to get started.</p>
+          <div align="center"><img src="https://static1.squarespace.com/static/547614b6e4b091b6cb04260a/t/5b22759b0e2e7255c1bafa5c/1550736650307/FF13160C-9AED-43E1-86F8-4DE87BC869F2.jpg?format=1000w" width="80%"></div>
+          <p>There are many offices like it in the area and... ah you get the idea. <br />Hey, who doesn't need some caffeine inspiration?</p>
+          <h2>Peruse some examples...</h2>
+        </section>
+        <div class="section2">
+<div class="flex-container">
+  <div class="square1">1</div>
+  <div class="square2">2</div>
+  <div class="square3">3</div>
+  <div class="square4">4</div>
+
+</div>
+            <div class="square1"></div><div class="square2"></div><div class="square3"></div><div class="square4"></div>
+
+          (Squiggly line graphic)
+          <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+          <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+</div>
 <section>
-  <nav>
-    <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Second Section</a></li>
-      <li><a href="#">Last Section</a></li>
-    </ul>
-  </nav>
-  <article>
-    <h2>London</h2>
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-  </article>
-</section>
-
-<footer>
-  <p>Footer</p>
-</footer>
-</body>
-</html>
+          <h2>Testimonials.</h2>
+          (Squiggly line graphic)
+          <p>Michelle Obama. Heather is a gentleman and a scholar. London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+          <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+          <h2>Let's chat.</h2>
+          (Squiggly line graphic)
+          <p> London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+          <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+        </body>
+      </section>
+      <footer>
+        <div class="footer-col">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+        </div>
+      </footer>
