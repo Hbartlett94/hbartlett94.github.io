@@ -29,7 +29,6 @@ background-color: #d0e5d5;
 }
 .section2 {
   padding: 20px 10% 20px 10%;
-  width: 100%;
 }
 
 h1 {
@@ -120,12 +119,51 @@ footer {
   padding-top: 50%;
   margin-top: -35%;
 }
+/*
 .flex-container {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  height: 200px;
-  justify-content: space-between;
+  height: 500px;
+  justify-content: space-around;
+}
+*/
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 </style>
 </head>
@@ -168,6 +206,7 @@ footer {
           <h2>Peruse some examples...</h2>
         </section>
         <div class="section2">
+<!--
 <div class="flex-container">
   <div class="square1">1</div>
   <div class="square2">2</div>
@@ -175,11 +214,47 @@ footer {
   <div class="square4">4</div>
 
 </div>
-            <div class="square1"></div><div class="square2"></div><div class="square3"></div><div class="square4"></div>
+</div>
+-->
+<div class="row">
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/-AlN6xEIOTLAHawknMOh4SHsx6zV0iy37J4Fy3RunXtethCW7u1-euJOc9lwkKrZw8FVLJ95VqOlVZh_hnZTxPcWexsst9XV_wz97H9zSoPBZLoU1YqLTZ_WCpdyUNjFXH5nqspCti04RJhA_KTntCTfKqkxsPHxeGCabyB0MNWQGTf29qUujqMBhr2fYwS6Ezch6aJkbkcZE8K7hNx3AEm98I2UR_fQyhX3F2n6Oq5JfCZ9JPB8yEsByEj5yV1_zwcYKF8J3f_CLTY4uiDvZtgK6YpoiksOhQO99zzUclrS3HN_b4z9mvW7iaZGWGQ_W-MTnUP53BtuKgDC2IaGw6XDlgOjdAXKLoggBpW-jVOdtr9ke2U2AiVa2kKN4shAzDSi3Uf-hM5Kj7oYSX2AzGST01dzQOfFw01HF-z-fFLVZw11oFW8zUixo04eOR8kHTTsWuuPQ8VL5snSsCx5-HABb5DFPFRgogQQ43zC8PFsxLkB0sEIAEuHmbsrAmfUpunsLIQYNmJMKc4XLdFMK8skljPwCQStycG8KvVA-XTp2L58o5re4Ieilh_D6Gl-OZZXO79BSVdJqyQy5ni2yqf20fMhuC8sGi2dNwTpNa0sfX-g7gwfd4ViQ50_dwppJapZZgu_yc6Tz_179Tv-NqpmrHis778=w668-h890-no" style="width:100%">
+    <img src="https://lh3.googleusercontent.com/g2Zsala012RxMJv5BFCNvaC7KNsPKSE3B4no9WBDm92RVol46TItxL8MGhROgwgEFLFRSn0YMy1ntiLbBAimCuVPqnjS3pIQ_pp4E3x9FS0GDvbjwR8WuYMi4wo18RXdRC5Ylt0A8A7d98MqPWvKlUyE3O_6yIWq0XwTzEx0reKmvp0bMEL5y_-zHK8BY6obp_5gSGP3HiaPY6yHeGw4_Hwn6liGJPJdG5_gVFHLL67GY3FHoHKkk8lLKqAm8gidGnk2nBocF-nL0KBHUy-whioQpUdRwovS6CjaDbOc2KMugYtZWmNUG1Qgq_g__ukfnOmjBll1IaQpu4Wyy-xanulacdCbLYIJnL4h1U0NLha-xsVSheMNG7FfDsQTlXCwkor8ITDvQ0j-VxQ2Vjk_lBMq9b8zMMmmqBCxjR2E5tnevx9nsxPVnBLPmVh00vif8yL6LJzvkDcWUkZq8egy02k27_fsOCIW3YWQwSJHtMZvvuEGfZs4-VUa41luzSItzsIFLHcnfO2C2Cd7x52kVnQ2J56mcES_A2si3EClAzmbHImWJq8wgxL3F4KtZYsOWxGjSAfeEHyEFut9cheVcFBY6rRDh-ibw3yrMTvaMTQk0OPOAQsBAfrE7YPERhWEId5mB9boOrL-a_hJ-SX6G6yNcEjN4Bs=w1188-h890-no" style="width:100%">
+    <img src="https://lh3.googleusercontent.com/ZB7dmx0ykrP-QHiTttvbEbRfMHJvg4cR6wk68Y2mwqRGxUT9TVt9CUCc1Gcl66Q-WXHVJqTtHJzcvMo-J3szyN7H4989A1_sScsuV6WqMJREYoX-v72jFyUdPuJAAGjNyW8R8KmaSKyptXNabwsQMZOBFV_L_k2lkIXjt8_-QhbcSSHjFtSCtFvr2F94RfA_J80yklUYXXmVrOtiGAEgIlIAnFfr5bwHXmB7ORrs4Ow2_f18ri3FHtQJKUj_blESisjpxR8nTMZ9i9x0hFjJbUkLACH0eF8sdJpYijOfeJc-tMPNCecG-DoBWKI2nXW8Gv6_5kw3BjGl8FJ3nebH0n6kM-pjmv4iyxd87wTA-q7F_sL_X4fM7XdnyfrPkgNxR2iz8id-6d6SAca1L6F-fAKO7Ugd1q28Op3sxIlRdQAEpiIB-xY19eYFW4MkHqcWepsWK1FVsUI4g9CcXBc4k_P1FU0Ggg938nMZNHAEnZ63pmqHk4io-THF1-z8GpysyTlEdK4qRChGSCdbUW4IbcaFJYjxuvj2vNBbMn2IF387Ct-00BLDhuzD3H5i-z3nuHJ2SHt9GWUVfXhRpTU67BSAlMQzrY-rttYU-D3VDXeOYxU85V9hViC8M2GFMKhqwNRtn5K364UaDE3Y1QhRjqwvDHPHO34=w668-h890-no" style="width:100%">
+    <img src="" style="width:100%">
+    <img src="/w3images/nature.jpg" style="width:100%">
+    <img src="/w3images/mist.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+  </div>
 
-          (Squiggly line graphic)
-          <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-          <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/hm867uibXT9R1uhVmZMy9AZOy1czzLlxb0aB6TB3zWR-RGza8OlFPLNMOm5hU-Fd9rHnGgFm6XCNBEB9J8riXVBEQE-C7Nv3wM939x8Ok0437PU0bPxMVtz0UzfaQUndrV0u4IOP0zEChpxU8li9C0_TLvCpR16QRVaio1BqfNmA5OXr6-AWF_5vpPuzvEgSUew32Lycikl0h_flNKsSMsU6c3CXzXC_Jaq_SQ9TE0gLA316EwhUjHxwZ929d0k8H7ZdKAjVbLz7_IIcjRaOSUFiIvp0Za7-m-HDGGmz-2Jims0MaEn46CWKJtGipoYTNojDQZt7jQML9I9NDxVDdHyn-GxvQhASzWLRmvksnjmIfcpFdh58RZMN3dAORPpki0VZc81J0B-xQEnM1aecVSCd_K5ddlVV747RSxFxnlMu017JyV-D0WcaBhxtfuzm5EThyj8ltaJqT2ConulLBAifcJsk8Y25O2oRI7kXhZY4SNmeI2kzil16tDAc2ZgGAy9dsKsItURXdG3okpB2KM-iG9RobdxEMlpbuOL-65CdFD7111G-Z-zrXbtjO6dEbhvQ7lcqxFkyd5YVeLiapNJGpvFJs760uTHFvCNyIyQIyxpnmKUdhmVnVFcB1eCoGNDHq9t6f10_godjNr-L0vFHugNC9uk=w358-h268-no" style="width:100%">
+    <img src="https://lh3.googleusercontent.com/hBLLooAPOtwiZHO7ZYIfcVNNX9s-UyVEjl_2UbvKnpPIRyBWzispG4Ok-qYtWSTsd-g6MnlC3sbukJutgu4Yql5Itou52Q-EQGwdsEK8IERslg-CQCNBjHtcf0fmGArA3IYQ0jyh_tEBXy9ZWJY9bJAUQ026lHVR7jRcx3ss88Uzh0AzCENG2spx1rad5XCeLPREgka2rtdcdTkYKLgQDWMk04wEifC6eXs2C_qnplXiKiceVB40ZD5Ns19FzRRFn_keA2Fl2Tp3aQmf67skOqY_XjuQT2sHja9zEAHld_E2F3m4lf-OiF4xbV-qAjhudTbKR7bqe_bqd86m_tGxyI7PN2Z7L0x5b-vY7dh5c353kUNqz52nBAudPuhKdYR78r7YA26zGtrB79Vk5_rtys5R7DEAaMiBFDaWlqulLc0wZJ_cCIZxxm5Tc_SWd71h5BH6Gp0bP6SpNdy_7Sh2ovcVLsDzLR_VuMzxcXwf5SjaehMRuSN8ixp4K6rNsgNiHRXp7vUc7jrVqslUrgNcC3CZnifvAU9DjflHri5AXZSf16LozqCftFkA1pwHE7thIiacC36OVQPbPA_nJH-S2eSf35gdLUFfJujFwuhYDHOZfyJT2014Z4A8QOWS6Jfa-dBsjfxcxYzPKBL_vdUWxU34J5cHsQw=w668-h890-no" style="width:100%">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/mountainskies.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+  </div>
+
+  <div class="column">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/falls2.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+    <img src="/w3images/nature.jpg" style="width:100%">
+    <img src="/w3images/mist.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+  </div>
+
+  <div class="column">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+    <img src="/w3images/ocean.jpg" style="width:100%">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/mountainskies.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+  </div>
+</div>
 </div>
 <section>
           <h2>Testimonials.</h2>
