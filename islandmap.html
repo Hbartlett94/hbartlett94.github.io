@@ -1,379 +1,164 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-
 <script
-
     type="text/javascript"
-
     src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" ></script>
-
 <link rel="stylesheet" type="text/css" href="/css/result-light.css">
-
-  
-
  <style id="compiled-css" type="text/css">
-
 /* Container holding the image and the text */
-
-
-
 .maincontain {
-
   position: absolute;
-
   margin: 0 auto;
-
   width: 437px;
-
 }
-
-
-
 .container {
-
   position: absolute;
-
   text-align: center;
-
   font-family: "calibri", sans-serif;
-
   z-index: -1;
-
   top: 0;
-
   left: 0;
-
 }
-
-
-
 map {
-
   position: relative;
-
   z-index: 100;
-
 }
-
-
-
 /* District labels */
-
-
-
 .nkohala {
-
   position: absolute;
-
   top: 75px;
-
   left: 75px;
-
   font-family: "calibri", sans-serif;
-
   font-weight: bold;
-
   pointer-events: none;
-
   z-index: 99;
-
 }
-
-
-
 .skohala {
-
   position: absolute;
-
   top: 145px;
-
   left: 104px;
-
   font-family: "calibri", sans-serif;
-
   font-weight: bold;
-
   pointer-events: none;
-
   z-index: 97;
-
 }
-
-
-
 .kona {
-
   position: absolute;
-
   top: 265px;
-
   left: 64px;
-
   font-family: "calibri", sans-serif;
-
   font-weight: bold;
-
   pointer-events: none;
-
   z-index: 99;
-
 }
-
-
-
 .kau {
-
   position: absolute;
-
   top: 382px;
-
   left: 156px;
-
   font-family: "calibri", sans-serif;
-
   font-weight: bold;
-
   pointer-events: none;
-
   z-index: 99;
-
 }
-
-
-
 .hamakua {
-
   position: absolute;
-
   top: 188px;
-
   left: 185px;
-
   font-family: "calibri", sans-serif;
-
   font-weight: bold;
-
   pointer-events: none;
-
   z-index: 99;
-
 }
-
-
-
 .hilo {
-
   position: absolute;
-
   top: 259px;
-
   left: 257px;
-
   font-family: "calibri", sans-serif;
-
   font-weight: bold;
-
   pointer-events: none;
-
   z-index: 99;
-
 }
-
-
-
 .puna {
-
   position: absolute;
-
   top: 325px;
-
   left: 310px;
-
   font-family: "calibri", sans-serif;
-
   font-weight: bold;
-
   pointer-events: none;
-
   z-index: 99;
-
 }
-
-
-
 .map {
-
   position: relative;
-
   top: 0;
-
   left: 0;
-
 }
-
-
-
 .outline {
-
   position: absolute;
-
   top: 0;
-
   left: 0;
-
   pointer-events: none;
-
   z-index: 98;
-
 }
-
 </style>
-
  <script type="text/javascript">
-
-
-
-
-
     window.onload=function(){
-
-      
-
 $(function() {
-
   $('.map').maphilight();
-
 });
-
-
-
-
-
     }
-
-
-
 </script>
-
 </head>
-
 <body>
-
     <head>
-
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
-
 </head>
-
 <div class="maincontain">
-
-
-
-
-
 <div class="nkohala">
-
   North <br /> Kohala
-
 </div>
-
 <div class="skohala">
-
   South <br /> Kohala
-
 </div>
-
 <div class="kona">
-
   Kona
-
 </div>
-
 <div class="kau">
-
   Ka&#699;&#363;
-
 </div>
-
 <div class="puna">
-
   Puna
-
 </div>
-
 <div class="hilo">
-
   Hilo
-
 </div>
-
 <div class="hamakua">
-
   H&#257;m&#257;kua
-
 </div>
-
-
-
 <div class="container">
-
   <img src="http://www.hawaiicountycdp.info/site-resources/pictures/cdpoutline.png/image" class="outline" usemap="islandmap">
-
   <img src="http://www.hawaiicountycdp.info/site-resources/pictures/cdpmap/image" usemap="#islandmap" class="map" />
-
-
-
-
-
   <map name='islandmap'>
-
   <area target="_blank"  alt="North Kohala" title="North Kohala" href="http://www.hawaiicountycdp.info/north-kohala-cdp"   coords="132,90,119,85,121,80,112,76,102,69,91,65,74,64,65,79,65,90,67,101,70,113,75,125,84,134,93,127,104,120,121,117,126,120,130,101" shape="poly" data-maphilight='{"strokeColor":"4d4d4d","strokeOpacity":0,"strokeWidth":1,"fillColor":"ffffff","fillOpacity":0.4}'/>
-
   <area target="_blank"  alt="South Kohala" title="South Kohala" href="http://www.hawaiicountycdp.info/south-kohala-cdp"   coords="83,133,99,123,113,118,128,116,142,121,138,125,142,125,145,128,140,132,145,134,150,133,150,137,156,133,168,145,170,164,149,206,156,206,152,219,151,232,132,223,113,204,104,192,71,182" shape="poly" data-maphilight='{"strokeColor":"4d4d4d","strokeOpacity":0,"strokeWidth":1,"fillColor":"ffffff","fillOpacity":0.4}'/>
-
     <area target="_blank"  alt="Kona" title="Kona" href="http://www.hawaiicountycdp.info/north-and-south-kona-cdp"   coords="71,183,87,189,106,192,113,203,122,214,130,221,135,222,153,234,136,254,123,266,131,281,145,304,164,336,135,346,116,353,115,359,107,356,103,380,96,400,102,408,108,412,110,429,66,464,59,457,58,369,32,290,10,239,31,208" shape="poly" data-maphilight='{"strokeColor":"4d4d4d","strokeOpacity":0,"strokeWidth":1,"fillColor":"ffffff","fillOpacity":0.4}'/>
-
     <area target="_blank"  alt="Ka'u" title="Ka'u" href="http://www.hawaiicountycdp.info/kau-cdp"   coords="67,463,111,431,109,422,108,414,95,400,104,381,106,357,118,358,116,352,163,336,180,322,218,311,241,291,246,300,243,304,245,307,248,307,254,316,245,316,250,323,252,323,259,331,259,336,262,338,252,339,262,346,268,344,276,347,285,364,282,373,287,385,286,402,257,447,188,503,136,532,66,488" shape="poly" data-maphilight='{"strokeColor":"4d4d4d","strokeOpacity":0,"strokeWidth":1,"fillColor":"ffffff","fillOpacity":0.4}'/>
-
     <area target="_blank"  alt="Puna" title="Puna" href="http://www.hawaiicountycdp.info/puna-cdp"   coords="285,402,287,385,282,373,285,365,276,347,269,343,263,346,252,340,262,339,259,335,259,331,253,323,250,323,246,316,254,316,249,308,245,307,244,306,246,301,261,316,312,289,314,292,338,273,357,249,390,277,432,315,379,385,311,411" shape="poly" data-maphilight='{"strokeColor":"4d4d4d","strokeOpacity":0,"strokeWidth":1,"fillColor":"ffffff","fillOpacity":0.4}'/>
-
   <area target="_blank"  alt="Hilo" title="Hilo" href="http://www.hawaiicountycdp.info/hilo"   coords="357,249,339,272,314,291,312,288,261,314,246,303,231,262,230,257,230,246,246,232,246,226,264,226,269,231,277,235,287,235,305,241,308,247,313,246,313,241,326,244,339,237,358,240" shape="poly" data-maphilight='{"strokeColor":"4d4d4d","strokeOpacity":0,"strokeWidth":1,"fillColor":"ffffff","fillOpacity":0.4}'/>
-
   <area target="_blank"  alt="Hamakua" title="Hamakua" href="http://www.hawaiicountycdp.info/hamakua-cdp"   coords="326,242,313,241,312,247,308,247,302,242,292,236,286,233,279,235,272,231,265,227,255,226,248,225,245,232,230,246,229,257,231,263,243,293,218,310,178,321,165,336,124,266,152,235,152,214,156,206,150,201,162,181,170,162,167,146,171,143,157,133,150,137,150,133,143,134,140,131,145,128,142,125,138,126,141,121,126,116,126,110,131,90,168,95,223,115,276,139,318,172,339,201" shape="poly" data-maphilight='{"strokeColor":"4d4d4d","strokeOpacity":0,"strokeWidth":1,"fillColor":"ffffff","fillOpacity":0.4}'/>
-
 </map>
-
 </div>
-
 </div>
-
   <script>
-
     // tell the embed parent frame the height of the content
-
     if (window.parent && window.parent.parent){
-
       window.parent.parent.postMessage(["resultsFrame", {
-
         height: document.body.getBoundingClientRect().height,
-
         slug: "of29sjnL"
-
       }], "*")
-
     }
-
-
-
     // always overwrite window.name, in case users try to set it manually
-
     window.name = "result"
-
   </script>
-
 </body>
-
 </html>
