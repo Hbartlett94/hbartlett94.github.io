@@ -1,0 +1,173 @@
+<html>
+<style>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Krub',sans-serif;
+  font-weight:bold;
+  text-transform: capitalize;
+  letter-spacing: .5px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.2;
+}
+.oneline {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 20px 0;
+}
+.twoline {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px 0;
+}
+body {
+  width: 600px;
+}
+.rectangle {
+  position: relative;
+  padding: 5px;
+  border: 1px solid #517d2b;
+  background-color: #517d2b;
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  .rectangle {
+  background-color: #6fab3b;
+  border-color: #6fab3b;
+}
+}
+.level-1 {
+  width: 180px;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 20px 0;
+}
+.level-1.rectangle::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 16px;
+  background: black;
+}
+
+.level-2, .level-3 {
+  width: 90%;
+  margin: 0 auto;
+}
+.level-2-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.level-2-wrapper::before {
+  content: "";
+  position: absolute;
+  margin-top: -15px;
+  left: 100px;
+  width: 400px;
+  height: 2px;
+  background: black;
+}
+.level-2-wrapper::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 15px);
+  left: 100px;
+  width: 400px;
+  height: 2px;
+  background: black;
+}
+.level-2.rectangle::before{
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 15px;
+  background: black;
+}
+.level-2.rectangle::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 17px;
+  background: black;
+}
+
+.level-3-wrapper {
+position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 60px;
+}
+.level-3-wrapper::before {
+  content: "";
+  position: absolute;
+  margin-top: -15px;
+  left: 100px;
+  width: 400px;
+  height: 2px;
+  background: black;
+}
+.level-3.rectangle::before{
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 15px;
+  background: black;
+}
+.center {
+  content: "";
+  position: absolute;
+  margin-top: -45px;
+  left: 299px;
+  width: 2px;
+  height: 30px;
+  background: black;
+}
+</style>
+
+<body>
+<a href="" target="_blank"><div class="rectangle level-1">
+  <p class="title">GENERAL PLAN</p>
+  </div></a>
+<div class="level-2-wrapper">
+  <div class="rectangle level-2">
+    <p class="title"><span class="oneline">FUNCTIONAL PLANS</span></p>
+    </div>
+  <a href="" target="_blank"><div class="rectangle level-2">
+    <p class="title"><span class="twoline">COMMUNITY DEVELOPMENT PLANS</span></p>
+    </div></a>
+  <a href="" target="_blank"><div class="rectangle level-2">
+    <p class="title"><span class="twoline">AREA IMPROVEMENT PLANS</span></p>
+    </div></a>
+</div>
+<div class="level-3-wrapper">
+  <a href="https://www.hawaiicounty.gov/departments/finance/budget" target="_blank"><div class="rectangle level-3">
+    <p class="title"><span class="oneline">OPERATING BUDGET</p>
+  </div></a>
+  <div class="center"></div>
+  <a href="https://www.hawaiicounty.gov/departments/finance/budget" target="_blank"><div class="rectangle level-3">
+    <p class="title"><span class="twoline">CAPITAL IMPROVEMENT PROGRAM (CIP)</p>
+    </div></a>
+  <a href="https://www.planning.hawaiicounty.gov/resources/resources-references/zoning-land-use" target="_blank"><div class="rectangle level-3">
+    <p class="title"><span class="twoline">LAND USE DEVELOPMENT CODES</p>
+    </div></a>
+</div>
+</body>
+</html>
